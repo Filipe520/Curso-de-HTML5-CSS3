@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        body {
+            width: 100vw;
+
+            margin: 0px;
+
+            background-image: url(imagens/gustavoguanabara-quadrado.png);
+            background-position: center center;
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        main {
+            max-width: 1000px;
+            min-width: 200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.952);
+        }
+        article {
+            max-width: 100%; 
+            min-width: 100%;
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        iframe {
+            margin: 10px;
+            padding: 10px;
+
+            border-bottom: 1px solid rgb(255, 0, 0)
+        }
+
+        .videos {
+            border-top: 1px solid rgb(255, 0, 0);
+
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Imagem dinâmica</h1>
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+                <img src="imagens/foto-g.png" alt="Imagem flexível">
+            </picture>
+            <h2>Reproduzindo Áudio</h2>
+            <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+            <audio preload="metadata" autoplay controls loop>
+                <source src="music/videoplayback.mp3" type="audio/MP3">
+                <source>
+            </audio>
+            <article class="videos">
+                <h2>Reproduzindo Vídeo</h2>
+                <p>Vamos aprender a reproduzir vídeos em HTML5.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?si=lIx7LedHSxBZTSA6&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video width="560px" poster="imagens/esquadraoSuicida.jpg" controls loop>
+                <source src="music/videoplayback.mp4" type="audio/mp4">
+                </video>
+            </article>
+        </article>
+    </main>
+</body>
+</html>

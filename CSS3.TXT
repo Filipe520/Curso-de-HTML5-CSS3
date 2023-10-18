@@ -1,0 +1,3 @@
+Efeitos degrader - background-image: 
+
+linear-gradient(to right, white, blue); - degrader para a direita, esquerda, cima, embaixo(to right, to left, to top, to bottom)

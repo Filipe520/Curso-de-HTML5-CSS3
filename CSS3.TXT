@@ -1,3 +1,24 @@
 Efeitos degrader - background-image: 
 
-linear-gradient(to right, white, blue); - degrader para a direita, esquerda, cima, embaixo(to right, to left, to top, to bottom)
+linear-gradient(to right, white, blue);
+ - degrader para a direita, esquerda, cima, embaixo(to right, to left, to top, to bottom)
+
+ Usando identificadores.
+
+- Em HTML é id  = CSS é # (só pode um elemento)
+- Em HTML é class = em CSS é . (pode vários elementos)
+
+ Usando outline.
+
+ - O Outline ele é parecido com a border, mais a border é do lado de dentro é OutLine é do lado de fora.
+						|
+						|
+        << Outline Shorthand>>			|	         << Border Shorthand >>
+						|
+  outline: 1px solid black;			| 		 border: 1px solid red;			
+						|
+	 << Outline normal>>			|		 << Border normal>>
+						|
+  outline-width: 10px;				| 		 border-width: 10px;
+  outline-style: solid;				|		 border-style: solid;
+  outline-color: black;				|		 border-color: black;

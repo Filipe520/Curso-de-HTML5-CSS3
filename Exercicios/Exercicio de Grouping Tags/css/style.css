@@ -1,0 +1,97 @@
+@charset "Utf-8"; /*Caso haja problemas com acentuação */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background-color: darkgray;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 800px;
+    background-color: white;
+    padding: 10px;
+}
+
+header > nav {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 10px;
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    color: white;
+    padding: 5px;
+    border-bottom: 1px solid rgba(3, 137, 255, 0.555);
+    list-style: none;
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+/* Quando passa o mouse vai acontecer alguma coisa */
+header li:hover {
+    transition: .5s all ease;
+    border-bottom: 1px solid rgb(0, 134, 252);
+    color: rgb(92, 92, 124);
+}
+
+main {
+    width: 800px;
+    height: 78vh;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#assunto {
+    padding: 10px;
+}
+
+#noticias {
+    background-color: rgb(230, 230, 230);
+    
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    text-align: center;
+}
+/* Vamos colocar sombra dentro da Tag */
+#sombrarTag {
+    box-shadow: inset 0px 3px 0px red;
+    background-color: darkgray;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Vamos colocar sombra fora da Tag */
+#sombrarTag2 {
+    box-shadow: 0px 3px 25px red;
+    background-color: darkgray;
+
+    padding: 10px;
+    margin: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

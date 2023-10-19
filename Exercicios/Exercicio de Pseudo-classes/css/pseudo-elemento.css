@@ -1,0 +1,44 @@
+/* 
+    Oque aprendemos até o momento.
+    
+ - SELETORES PERSONALIZADOS
+
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = clildren
+*/
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Quando visitar o site ele vai interagir */
+a:visited {
+    color: darkred;
+}
+
+/* Quando eu passar o mouese em cima ele vai interagir */
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Quando click no link ele vai interagir */
+a:active {
+    color: darkgray;
+}
+
+/* Quando agente vai querer adicionar algum elemento antes do elemento */
+a::before {
+    content: "⇒ ";
+    color: darkgray;
+}
+/* Quando agente vai querer adicionar algum elemento depôs do elemento */
+a::after {
+    content: " ⇐";
+    color: darkgray;
+}

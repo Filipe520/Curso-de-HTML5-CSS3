@@ -22,3 +22,11 @@ linear-gradient(to right, white, blue);
   outline-width: 10px;				| 		 border-width: 10px;
   outline-style: solid;				|		 border-style: solid;
   outline-color: black;				|		 border-color: black;
+
+        Tipos de Format()
+
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (Apple Advanced Typography)
+- svg 

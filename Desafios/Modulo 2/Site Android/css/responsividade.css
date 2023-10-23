@@ -1,0 +1,67 @@
+@media screen and (max-width: 320px){
+    header > section {
+        width: 320px;
+        text-align: center;
+    }
+    header > section h2 {
+        font-size: 4vh;
+    }
+    header > section p {
+        font-size: 5vw;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header > nav > ul {
+        max-width: 150px;
+        min-width: 50px;
+        
+    }
+
+    header > nav a {
+        font-size: 3vh;
+    }
+
+    main {
+        max-width: 320px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    main > section {
+        padding: 10px;
+    }
+
+    main > section h1 {
+        font-size: 5.5vw;
+    }
+
+    main > section h2 {
+        background-image: none;
+    }
+
+    main > section > article img{
+        max-width: 320px;
+    }
+
+    main > #videoAndroid {
+        max-width: 280px;
+    }
+
+    main > section > article > iframe {
+        width: 220px;
+    }
+
+    main #conteudoExtra {
+        max-width: 295px;
+    }
+
+    main #conteudoExtra abbr {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

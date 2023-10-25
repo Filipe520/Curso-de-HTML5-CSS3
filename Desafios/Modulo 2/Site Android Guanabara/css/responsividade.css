@@ -1,0 +1,50 @@
+
+header {
+    min-height: 150px;
+}
+
+main img {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header > p {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+
+nav li{
+    display: inline-block;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main p {
+    text-align: justify;
+}
+
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+div.video {
+    padding-bottom: 58%;
+}
+
+div.video > iframe {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}

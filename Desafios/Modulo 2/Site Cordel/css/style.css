@@ -1,0 +1,165 @@
+@charset "UTF-8"; /* caso haja problemas com acentuação */
+
+/* Fonte importadas do Google Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+/* configuração para resetar as configuração da margin, padding*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores é Font das letras */
+:root {
+    --fundoHeader: black;
+    --fundoParagrafo: rgba(0, 0, 0, 0.541);
+    --fonteH1: 'Passion One', sans-serif;
+    --fonteP: 'Sriracha', cursive;
+}
+header {
+    height: 250px;
+    background-color: var(--fundoHeader);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 {
+    font-family: var(--fonteH1);
+    color: white;
+    font-size: 10vh;
+}
+
+header a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+header strong {
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    header h1 {
+        font-size: 7vh;
+    }
+}
+
+article#Fundo1 {
+    height: 80vh;
+    background-image: url(../image/background001.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 10px rgba(0, 0, 0, 0.432);
+    color: white
+}
+
+article#Fundo2 {
+    height: 80vh;
+    background-image: url(../image/background002.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.712);
+}
+
+main article {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p.bloco {
+    min-width: 220px;
+    max-width: 500px;
+    padding: 30px 30px;
+    font-size: 4vh;
+    font-family: var(--fonteP);
+    line-height: 80px;
+}
+
+p.fundoEscuro {
+    margin: 0px 10px;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+}
+
+footer {
+    border-top: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vh;
+}
+
+footer section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+footer article {
+    display: flex;
+    flex-direction: column;
+}
+
+footer article a {
+    color: white;
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
+footer article a:hover {
+    color: rgba(189, 189, 189, 0.507);
+    text-decoration: none;
+}
+
+footer h2 {
+    padding-right: 20px;
+}
+
+footer h3 {
+    width: 370px;
+}
+
+
+footer h3 > a {
+    color: rgb(77, 185, 248);
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
+footer h3 > a:hover {
+    color: rgb(0, 142, 224);
+}
+
+ion-icon {
+    width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    ion-icon {
+        width: 20px;
+    }
+
+    footer h3 {
+        min-width: 130px;
+        max-width: 80px;  
+    }
+
+    p.bloco {
+        line-height: 40px;
+    }
+}

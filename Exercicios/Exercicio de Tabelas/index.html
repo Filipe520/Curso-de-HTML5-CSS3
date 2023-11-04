@@ -18,7 +18,17 @@
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+        }
+
+        tr.linha {
+            background-color: rgba(255, 0, 0, 0.336);
+        }
+        
+        td.alinhamentoEsquerda {
             text-align: left; /* Alinhamento Horizontal de celulas(textos)*/
+        }
+        td.alinhamentoEmCima {
             vertical-align: top; /* Alinhamento Vertical de celulas(textos)*/
         }
 
@@ -34,9 +44,9 @@
                 TABLE DATA = dado de tabela
      -->
     <table>
-        <tr>  <!--Primeira linha -->
+        <tr class="linha">  <!--Primeira linha -->
             <td>A1</td>
-            <td>B1</td>
+            <td class="alinhamentoEmCima">B1</td>
             <td>C1</td>
         </tr>
         <tr> <!--Segunda linha-->
@@ -47,7 +57,7 @@
         <tr> <!--Terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="alinhamentoEsquerda">C3</td>
         </tr>
         <tr> <!--Quarta linha-->
             <td>A4</td>

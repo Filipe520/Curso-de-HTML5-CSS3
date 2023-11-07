@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <!-- Tamanho pafrãp 300x150 -->
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do CursoemVideo para aprender a programar.</p>
+    <!--dentro do scrolling podemos usar 
+        auto, yes, no, vai ser igual o overFlow ou parecido-->
+    <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="">
+        <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>
+    </iframe>
+
+    <p>O site do <iframe src="https://www.google.com.br" frameborder="0">
+        <a href="https://www.google.com.br" target="_blank">Google</a>
+    </iframe> Google  também é muito legal!, pena que não funcionar dentro do iframe</p>
+
+    <p>O repositório do Guanaraba
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a>
+        </iframe>
+        também é bem legal
+    </p>
+</body>
+</html>

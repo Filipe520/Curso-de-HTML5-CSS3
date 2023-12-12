@@ -21,6 +21,10 @@ body {
 main {
     position: relative;
     height: 100vh;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 section#telefone {
@@ -41,4 +45,26 @@ iframe#tela {
 
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#redes-sociais img {
+    width: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+}
+
+#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.753);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    transition: transform .3s, border 1s;
 }

@@ -12,11 +12,15 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobreNome" id="sobreNome"></p>
-        <input type="button" value="Enviar">
+    <!-- O label(Etiqueta) é bastante importante para os formulários,  eu tenho que fazer a relação entre qual objeto do formulário é qual é a etiqueta dele-->
+    <form method="post" action="cadastro.php" autocomplete="of">
+        <p><label for="iNome">Nome:</label>
+             <input type="text" name="nome" id="iNome">
+        </p>
+        <p><label for="iSobreNome">Sobrenome: </label>
+            <input type="text" name="sobreNome" id="iSobreNome">
+        </p>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>

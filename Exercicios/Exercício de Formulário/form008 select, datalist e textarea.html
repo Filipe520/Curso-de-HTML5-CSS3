@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        textarea {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        textarea:hover {
+            border: 1px solid rgb(99, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <fieldset>
+            <legend>Select</legend>
+            <p>
+                <label for="iEsr">Estado</label>
+                <select name="estado" id="iEst">
+
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhã</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>DataList</legend>
+            <p>
+                <label for="iProf">Profissão: </label>
+                <input type="text" name="prof" id="iProf" list="lstProf">
+                <datalist id="lstProf">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabil</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>TexTarea</legend>
+            <p>
+                <label for="iMSG">Mensagem: </label>
+                <textarea name="msg" id="iMSG" cols="30" rows="10" placeholder="Sua Mensagem...."></textarea>
+            </p>
+        </fieldset>
+    </form>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>

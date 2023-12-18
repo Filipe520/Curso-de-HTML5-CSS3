@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <fieldset>
+            <legend>Range</legend>
+            <p>
+                <label for="iNum">Número: </label>
+                <input type="range" name="num" id="iNum" min="0" max="10" value="5" oninput="iVal.innerHTML = Number(iNum.value)">
+                <output id="iVal">5</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -12,32 +12,21 @@
         justify-content: center;
         flex-direction: column;
     }
+
+    header li {
+        width: 200px;
+    }
     main {
         min-width: 220px;
         max-width: 600px;
     }
+
+    main p {
+        margin: 10px;
+        line-height: 30px;
+        font-size: 1em;
+    }
 }
 
-/* Telas Celulares */
 
-/* @media screen and (min-width: 600px) and (max-width: 768px) {
-    
-} */
 
-/* Telas Tablet */
-
-/* @media screen  and (min-width: 769px) and (max-width: 992px) {
-
-} */
-
-/* Telas Desktop */
-
-/* @media screen and (min-width: 992px) and (max-width: 1200px) {
-    
-} */
-
-/* Telas Grandes(TV) */
-
-/* @media screen and (min-width: 1200px) {
-    
-} */

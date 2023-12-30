@@ -1,15 +1,9 @@
 let ulMenu = document.querySelector("header ul")
 let liMenu = document.querySelectorAll("header li")
-
 function clicouMenu() {
-    ulMenu.style.height = "80vh"
-    ulMenu.style.transition = "all ease .8s"
-
+    ulMenu.classList.toggle("toggleMenu")
     for (let c = 0; c < liMenu.length; c++) {
-        setTimeout(function() {
-            liMenu[c].style.display = "block"
-            liMenu[c].style.opacity = ".8"
-        }, 800)
+        liMenu[c].classList.toggle("toggleAddOpcao")
     }
 }
 

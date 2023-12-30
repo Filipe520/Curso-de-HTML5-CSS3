@@ -1,0 +1,100 @@
+@charset "UTF-8"; /* Caso haja problemas com acentuação*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 196, 196);
+}
+
+header {
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+
+header menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+header ul {
+    width: 500px;
+    height: 0px;
+    margin: auto;
+    
+    background-color: rgb(83, 83, 83);
+}
+
+header #menu-Humburguer {
+    cursor: pointer;
+}
+
+header li {
+    opacity: 0;
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    display: none;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all ease-out .5s;
+}
+header li:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: 1px solid white;
+}
+
+main {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px 10px;
+    margin-bottom: 10px;
+}
+
+main section {
+    width: 100%;
+}
+
+
+main h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+main p {
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 20px;
+    font-size: 1.3em;
+}
+
+footer {
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: rgb(43, 43, 43);
+}
+

@@ -1,0 +1,43 @@
+@charset "UTF-8"; /* Caso haja problemas com acentuação */
+
+/* Aparelho em pé (Portrait) */
+
+/* Telas Pequenas */
+
+@media screen and (max-width: 600px) {
+    header ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main {
+        min-width: 220px;
+        max-width: 600px;
+    }
+}
+
+/* Telas Celulares */
+
+/* @media screen and (min-width: 600px) and (max-width: 768px) {
+    
+} */
+
+/* Telas Tablet */
+
+/* @media screen  and (min-width: 769px) and (max-width: 992px) {
+
+} */
+
+/* Telas Desktop */
+
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+} */
+
+/* Telas Grandes(TV) */
+
+/* @media screen and (min-width: 1200px) {
+    
+} */
